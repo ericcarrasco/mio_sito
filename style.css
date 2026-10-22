@@ -1,51 +1,41 @@
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
   background-image: url("img/sfondo.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
+}
+nav {
+  background: #1f6feb;
+  padding: 14px;
   text-align: center;
-  padding: 20px;
 }
-
-h1 {
-  color: darkblue;
-}
-
-.sotto {
-  color: gray;
-}
-
-.scheda {
-  background: white;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-  color: teal;
-}
-
-.piede {
-  font-size: 12px;
-  color: gray;
-}
-
-.bottone {
-  display: inline-block;
-  background: darkblue;
+nav a {
   color: white;
-  padding: 8px 14px;
-  border-radius: 8px;
+  margin: 0 14px;
+  font-weight: bold;
   text-decoration: none;
-  margin: 4px;
-  transition: all 0.3s;
 }
-
-.bottone:hover {
-  background: orange;
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px 26px;
+  border-radius: 14px;
+  animation: entra 1s ease;
+}
+footer {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-shadow: 0 0 4px black;
+}
+@keyframes entra {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
